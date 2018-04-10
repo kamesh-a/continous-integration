@@ -1,0 +1,12 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js: 
+  - "9.11.1"
+
+install:
+  - yarn install
+
+script:
+  - yarn run test
