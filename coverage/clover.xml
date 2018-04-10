@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1523352698597" clover="3.2.0">
-  <project timestamp="1523352698597" name="All files">
+<coverage generated="1523359626358" clover="3.2.0">
+  <project timestamp="1523359626358" name="All files">
     <metrics statements="58" coveredstatements="58" conditionals="14" coveredconditionals="14" methods="11" coveredmethods="11" elements="83" coveredelements="83" complexity="0" loc="58" ncloc="58" packages="1" files="5" classes="5">
       <file name="form_validator.js" path="/Volumes/HD_II/Personal/Learning/nodejs/es6/express-app-testing-demo/app/form_validator.js">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
