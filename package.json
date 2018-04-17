@@ -9,7 +9,7 @@
   "main": "app/server.js",
   "scripts": {
     "start": "nodemon app/server.js",
-    "test": "npm run lint && npm run jest",
+    "test": "yarn run jest",
     "test:e2e": "jest --runInBand e2e_tests/*.test.js",
     "jest": "jest --no-watchman --coverage app/__tests__/*.test.js",
     "lint": "eslint app/** e2e_tests/*",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "eslint": "^4.12.1",
     "jest": "^21.2.1",
+    "jest-jenkins-reporter": "^1.0.1",
     "nodemon": "^1.12.5",
     "prettier": "^1.9.1",
     "supertest": "~3.0.0"
@@ -33,8 +34,14 @@
     "url": "https://github.com/gregjopa/express-app-testing-demo"
   },
   "jest": {
+    "testResultsProcessor": "jest-jenkins-reporter",
     "testEnvironment": "node",
     "verbose": true
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "report.xml",
+    "indent": 4
   },
   "prettier": {
     "singleQuote": true
