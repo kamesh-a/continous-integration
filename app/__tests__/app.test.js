@@ -15,7 +15,7 @@ describe('index route', () => {
       .expect(200)
       .then(response => {
         expect(response.text).toMatch(
-          /<title>xpress App Testing Demo<\/title>/
+          /<title>Express App Testing Demo<\/title>/
         );
       });
   });
